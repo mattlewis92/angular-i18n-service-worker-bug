@@ -2470,7 +2470,7 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
         }
         fetchLatestManifest(ignoreOfflineError = false) {
             return __awaiter(this, void 0, void 0, function* () {
-                const res = yield this.safeFetch(this.adapter.newRequest('ngsw.json?ngsw-cache-bust=' + Math.random()));
+                const res = yield this.safeFetch(this.adapter.newRequest('en-US/ngsw.json?ngsw-cache-bust=' + Math.random()));
                 if (!res.ok) {
                     if (res.status === 404) {
                         yield this.deleteAllCaches();
