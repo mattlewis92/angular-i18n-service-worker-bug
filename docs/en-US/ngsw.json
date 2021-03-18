@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1616070232206,
+  "timestamp": 1616070462092,
   "index": "/angular-i18n-service-worker-bug/en-US/index.html",
   "assetGroups": [
     {
@@ -77,5 +77,5 @@
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
   ],
-  "navigationRequestStrategy": "performance"
+  "navigationRequestStrategy": "freshness"
 }
