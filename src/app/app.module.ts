@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {APP_BASE_HREF} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,10 @@ import { environment } from '../environments/environment';
     // AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [{
+    provide: APP_BASE_HREF,
+    useValue: '/angular-i18n-service-worker-bug/'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
